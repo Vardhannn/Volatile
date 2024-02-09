@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Catalog</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+        img {
+            max-width: 100px;
+            max-height: 150px;
+        }
+        .add-to-cart-btn {
+            background-color: #1cab21ea;
+            color: white;
+            padding: 8px 12px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Book Catalog</h1>
+
+<table>
+    <thead>
+        <tr>
+            <th>Sno</th>
+            <th>Cover</th>
+            <th>Author</th>
+            <th>Publisher</th>
+            <th>Price</th>
+            <th>Add to Cart</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td><img src="https://m.media-amazon.com/images/I/61pZyTuNDYL._SY466_.jpg" alt="Book 1 Cover"></td>
+            <td>Robin Sharma</td>
+            <td>Jaico Books</td>
+            <td>199/-</td>
+            <td><button class="add-to-cart-btn" onclick="addToCart('Robin Sharma', 'Jaico Books', '199')">Add to Cart</button></td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td><img src="https://m.media-amazon.com/images/I/51-nXsSRfZL._SY445_SX342_.jpg" alt="Book 2 Cover"></td>
+            <td>James Clear</td>
+            <td>Penguin</td>
+            <td>200/-</td>
+            <td><button class="add-to-cart-btn" onclick="addToCart('James Clear', 'Penguin', '200')">Add to Cart</button></td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td><img src="https://m.media-amazon.com/images/I/51wbVQTpTgL._SY445_SX342_.jpg" alt="Book 3 Cover"></td>
+            <td>Apj Abdul Kalam</td>
+            <td>Universities Press</td>
+            <td>375/-</td>
+            <td><button class="add-to-cart-btn" onclick="addToCart('Apj Abdul Kalam', 'Universities Press', '375')">Add to Cart</button></td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td><img src="https://m.media-amazon.com/images/I/41GMFzpDzuL._SY445_SX342_.jpg" alt="Book 4 Cover"></td>
+            <td>Paramahamsa Yogananda</td>
+            <td>Spirtual Legacy of Yogananda</td>
+            <td>144/-</td>
+            <td><button class="add-to-cart-btn" onclick="addToCart('Paramahamsa Yogananda', 'Spirtual Legacy of Yogananda', '144')">Add to Cart</button></td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td><img src="https://m.media-amazon.com/images/I/71GBwRkvchL._SY466_.jpg" alt="Book 5 Cover"></td>
+            <td>Jay Shetty</td>
+            <td>Cocoblu</td>
+            <td>340/-</td>
+            <td><button class="add-to-cart-btn" onclick="addToCart('Jay Shetty', 'Cocoblu', '340')">Add to Cart</button></td>
+        </tr>
+    </tbody>
+</table>
+
+<script>
+    function addToCart(author, publisher, price) {
+        // Implement your logic to add the book to the cart
+        alert("Book added to cart:\nAuthor: " + author + "\nPublisher: " + publisher + "\nPrice: " + price);
+    }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Palette</title>
+    <style>
+        body {
+            transition: background-color 0.5s;
+            text-align: center;
+        }
+        .color-box {
+            display: inline-block;
+            width: 50px;
+            margin: 24px;
+        }
+
+        .color-name {
+            position: relative;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 12px;
+            padding: 10px 20px;
+            width: 100px;
+            border: 1px solid white;
+            cursor: grab;
+        }
+
+    </style>
+</head>
+<body>
+
+    <h2>Move your mouse over the color boxes to change the background color!</h2>
+
+<div class="color-box" onmouseover="changeBackgroundColor('red')" onmouseout="changeBackgroundColor('white')" title="Red">
+    <button class="color-name" style="background-color: red;">RED</button>
+</div>
+<div class="color-box" onmouseover="changeBackgroundColor('blue')" onmouseout="changeBackgroundColor('white')" title="Blue">
+    <button class="color-name" style="background-color: blue;">BLUE</button>
+</div>
+<div class="color-box" onmouseover="changeBackgroundColor('green')" onmouseout="changeBackgroundColor('white')" title="Green">
+    <button class="color-name" style="background-color: green;">GREEN</button>
+</div>
+<div class="color-box" onmouseover="changeBackgroundColor('yellow')" onmouseout="changeBackgroundColor('white')" title="Yellow">
+    <button class="color-name" style="background-color: yellow; color: black;">YELLOW</button>
+</div>
+<div class="color-box" onmouseover="changeBackgroundColor('purple')" onmouseout="changeBackgroundColor('white')" title="Purple">
+    <button class="color-name" style="background-color: purple;">PURPLE</button>
+</div>
+
+    <script>
+        function changeBackgroundColor(color) {
+            document.body.style.backgroundColor = color;
+        }
+    </script>
+
+</body>
+</html>

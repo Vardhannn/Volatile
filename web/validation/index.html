@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form{
+            width: 300;
+        }
+    </style>
+
+</head>
+<body>
+    <h1 align = "center" >Student Registration</h1>
+    
+    <form name="RegForm" onsubmit="return validate()">
+
+            <label  for="fname">First name:</label><br>
+            <input type="text" name="Name"><br>
+
+            <label for="lname">Last name</label><br>
+            <input type="text" id ="lname" name ="lname"><br>
+
+            <label for="EMail">Email</label><br>
+            <input type="text" id ="EMail" name ="EMail"><br>
+
+            <label for="pass">Create Password</label><br>
+            <input type="password" id ="Password" name ="Password"><br>
+
+            <label for="pass">Re-type Password</label><br>
+            <input type="password" id ="rePassword" name ="rePassword"><br><br> 
+
+            <label for ="gender">Gender</label><br>
+            <input type="radio" id="gender" name="gender" value="Male">Male<br>
+            <input type="radio" id="gender" name="gender" value="Female">Female<br><br>
+
+            <textarea rows="4" cols="50" name="comment" form="usrform">Enter text here...</textarea><br><br>
+
+            <input type="file"  name="filename"><br><br>
+
+            <input type="checkbox" id="terms" name="terms" value="terms">
+            <label for="terms">Agree to terms and conditons</label><br><br>
+
+            <input type="submit" value="Send" name="Submit" />
+            <input type="reset" value="Reset" name="Reset" />
+        </form>
+
+        <script src="form.js"></script>
+       
+
+
+
+
+
+
+    
+</body>
+</html>

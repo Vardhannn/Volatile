@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <h1 align = "center">HTML5 CANVAS</h1>
+</head>
+<body>
+    <canvas id="myCanvas" width="200" height="100" style="border:1px solid #d3d3d3;">
+        Your browser does not support the HTML canvas tag.</canvas>
+
+    <canvas id="can" width="200" height="100" style="border:1px solid #d3d3d3;"></canvas>
+
+    <canvas id="can1" width="200" height="100" style="border:1px solid #d3d3d3;"></canvas>
+        
+    <canvas id="can2" width="200" height="100" style="border:1px solid #d3d3d3;"></canvas>
+        <script>
+        var c = document.getElementById("myCanvas");
+        var ctx = c.getContext("2d");
+        ctx.beginPath();
+        ctx.arc(95,50,40,0,2*Math.PI);
+        ctx.stroke();
+        </script>
+
+        <script>
+            var c = document.getElementById("can");
+            var ctx = c.getContext("2d");
+            ctx.font = "30px Arial";
+            ctx.fillText("WEB", 65, 60);
+        </script>
+
+        <script>
+            var c = document.getElementById("can1");
+            var ctx = c.getContext("2d");
+            ctx.font = "30px Times New Roman";
+            ctx.strokeText("WEB", 65, 60);
+        </script>
+
+        <script>
+            var c = document.getElementById("can2");
+            var ctx = c.getContext("2d");
+
+            var grd = ctx.createLinearGradient(0, 0, 200, 0);
+            grd.addColorStop(0, "Green");
+            grd.addColorStop(1, "white");
+
+            ctx.fillStyle = grd;
+            ctx.fillRect(10, 10, 150, 80);
+        </script>
+
+
+            
+        
+</body>
+</html>
+

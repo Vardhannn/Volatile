@@ -1,10 +1,11 @@
 package JDBC;
 
+
 import java.sql.*;
 
 public class app {
 
-    private static final String URL = "jdbc:mysql://localhost:3306/university";
+    private static final String URL = "Driver:mysql://localhost:3306/university";
     private static final String USER = "root";
     private static final String PASSWORD = "";
 

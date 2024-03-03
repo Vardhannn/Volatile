@@ -1,0 +1,58 @@
+<!-- user_details_form.html -->
+<head>
+    <link rel="stylesheet" href="dashboard_style.css">
+
+</head>
+<div class="user-details-form">
+    <h2>Welcome, <?php echo $row['firstname'] . ' ' . $row['lastname']; ?>!</h2>
+
+    <div class="details-group">
+        <label for="regNumber">Registration Number:</label>
+        <span id="regNumber"><?php echo $row['regNumber']; ?></span>
+    </div>
+
+    <div class="details-group">
+        <label for="email">Email:</label>
+        <span id="email"><?php echo $row['Email']; ?></span>
+    </div>
+
+    <div class="details-group">
+        <label for="contact">Contact:</label>
+        <span id="contact"><?php echo $row['contact']; ?></span>
+    </div>
+
+    <div class="details-group">
+        <label for="Birth">Date of Birth:</label>
+        <span id="age"><?php echo $row['Birth']; ?></span>
+    </div>
+
+    <div class="details-group">
+        <label for="gender">Gender:</label>
+        <span id="gender"><?php echo $row['gender']; ?></span>
+    </div>
+
+    <div class="details-group">
+        <label for="address">Address:</label>
+        <span id="address"><?php echo $row['address']; ?></span>
+    </div>
+
+    <div class="details-group">
+        <label for="degree">Degree:</label>
+        <span id="degree"><?php echo $row['Degree']; ?></span>
+    </div>
+
+    <div class="details-group">
+        <label for="department">Department:</label>
+        <span id="department"><?php echo $row['Department']; ?></span>
+    </div>
+
+    <div class="details-group">
+        <label for="year">Year:</label>
+        <span id="year"><?php echo $row['year']; ?></span>
+    </div>
+
+    <a href="login_page.html"><input type = "button" name = "back" value = "Back to Login">
+    </a>
+
+
+</div>
